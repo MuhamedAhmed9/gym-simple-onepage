@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "5812427e-a88a-4c60-9687-b4961defab81",
+		"name": "Gym",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23159361"
+	},
+	"item": [
+		{
+			"name": "Gym",
+			"item": [
+				{
+					"name": "Explore gyms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{app_token}}",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "{{lang}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/gyms?lat=31.2475504&long=29.963676&page_number=1&page_size=1000&search_diameter=1000",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"gyms"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "31.2475504"
+								},
+								{
+									"key": "long",
+									"value": "29.963676"
+								},
+								{
+									"key": "page_number",
+									"value": "1"
+								},
+								{
+									"key": "page_size",
+									"value": "1000"
+								},
+								{
+									"key": "search_diameter",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Explore gyms",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "{{app_token}}"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "{{lang}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": "{{base_url}}/gyms"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53f139b727593883fc92e1fe468f4795\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "e1e52bd6-6fb2-4de9-b6dd-16c490eabdd8"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.080312"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"address\": \"alexandria\",\n            \"district\": \"gleem\",\n            \"commercial_file_url\": \"http://file.localdomain.tld\",\n            \"dynamic_link\": \"\",\n            \"description\": \"descrisssption3\",\n            \"gender_type\": \"females_only\",\n            \"status\": \"accepted\",\n            \"lat\": 23.2,\n            \"logo_img_url\": \"sdfsdflddf3\",\n            \"long\": 24.12,\n            \"name\": \"Gym4444444\",\n            \"owner_id\": 6,\n            \"email\": \"saadbadie@gmail.com\",\n            \"phone_number\": \"1282893613\",\n            \"country_code\": \"+20\",\n            \"enable_notification\": true,\n            \"phone_verified\": true,\n            \"rate\": 2,\n            \"is_hot_deal\": true,\n            \"is_featured\": true,\n            \"user_role\": \"gym\",\n            \"source\": \"fb\"\n        },\n        {\n            \"id\": 5,\n            \"address\": \"egypt\",\n            \"district\": null,\n            \"commercial_file_url\": \"http://file.localdomain.tld\",\n            \"dynamic_link\": null,\n            \"description\": \"description3\",\n            \"gender_type\": \"males_only\",\n            \"status\": \"accepted\",\n            \"lat\": 23.336,\n            \"logo_img_url\": \"sdfsdflddf3\",\n            \"long\": 24.333,\n            \"name\": \"Gym3\",\n            \"owner_id\": 13,\n            \"email\": \"\",\n            \"phone_number\": \"1282794872\",\n            \"country_code\": \"+20\",\n            \"enable_notification\": true,\n            \"phone_verified\": true,\n            \"rate\": 0,\n            \"is_hot_deal\": false,\n            \"is_featured\": true,\n            \"user_role\": \"gym\",\n            \"source\": \"app\"\n        },\n        {\n            \"id\": 3,\n            \"address\": \"egypt\",\n            \"district\": null,\n            \"commercial_file_url\": \"http://file.localdomain.tld\",\n            \"dynamic_link\": null,\n            \"description\": \"description3\",\n            \"gender_type\": \"males_only\",\n            \"status\": \"accepted\",\n            \"lat\": 23.2,\n            \"logo_img_url\": \"sdfsdflddf3\",\n            \"long\": 24.12,\n            \"name\": \"Gym3\",\n            \"owner_id\": 7,\n            \"email\": \"ahmed.mamdouh+12@gmail.com\",\n            \"phone_number\": \"1282894613\",\n            \"country_code\": \"+20\",\n            \"enable_notification\": true,\n            \"phone_verified\": true,\n            \"rate\": 0,\n            \"is_hot_deal\": false,\n            \"is_featured\": false,\n            \"user_role\": \"gym\",\n            \"source\": \"twitter\"\n        },\n        {\n            \"id\": 25,\n            \"address\": null,\n            \"district\": null,\n            \"commercial_file_url\": null,\n            \"dynamic_link\": null,\n            \"description\": \"description\",\n            \"gender_type\": \"males_only\",\n            \"status\": \"accepted\",\n            \"lat\": 23.2,\n            \"logo_img_url\": \"sdfsdflddf\",\n            \"long\": 24.12,\n            \"name\": \"Gym\",\n            \"owner_id\": 34,\n            \"email\": \"heba.mamdouh+17770@inovaeg.com\",\n            \"phone_number\": \"1287298872\",\n            \"country_code\": \"+20\",\n            \"enable_notification\": true,\n            \"phone_verified\": false,\n            \"rate\": 0,\n            \"is_hot_deal\": true,\n            \"is_featured\": false,\n            \"user_role\": \"gym\",\n            \"source\": \"app\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
